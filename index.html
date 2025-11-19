@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        nav {
+            background: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background: #666;
+            border-radius: 5px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .card p {
+            text-align: center;
+            padding: 5px;
+            color: #555;
+        }
+
+        .card button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #222;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            background: #ff6600;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #222;
+            color: white;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>My E-Commerce Store</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Cart</a>
+    <a href="#">Login</a>
+</nav>
+<div class="products">
+    <div class="card">
+        <img src="https://www.amazon.in/Mens-Running-Shoes/b?ie=UTF8&node=1983550031" alt="Shoes">
+        <h3>Running Shoes</h3>
+        <p>Price: ₹1,999</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://www.google.com/imgres?q=wireless%20headphones&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F61RahTQtAqL._AC_UF1000%2C1000_QL80_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.in%2FBluetooth-Headphones-Cancelling-Wireless-Playtime%2Fdp%2FB0C2D21HBX&docid=nGx83BJuQ4qwVM&tbnid=WAD7E7Kic-1jXM&vet=12ahUKEwithr3qhf6QAxUISfUHHbcEPBoQM3oECBYQAA..i&w=794&h=1000&hcb=2&ved=2ahUKEwithr3qhf6QAxUISfUHHbcEPBoQM3oECBYQAA" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>Price: ₹2,499</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://www.google.com/imgres?q=digital%20camera&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F99%2FCanon_PowerShot_A95_-_front_and_back.jpg%2F250px-Canon_PowerShot_A95_-_front_and_back.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDigital_camera&docid=UmeIPsunLsI-PM&tbnid=hGHpGum3roYrSM&vet=12ahUKEwiAt5GRhv6QAxX7bPUHHQqyCvEQM3oECBMQAA..i&w=250&h=372&hcb=2&ved=2ahUKEwiAt5GRhv6QAxX7bPUHHQqyCvEQM3oECBMQAA" alt="Camera">
+        <h3>Digital Camera</h3>
+        <p>Price: ₹15,999</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://www.google.com/imgres?q=smart%20watch&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F61QH%2BTa0QmL._AC_UF1000%2C1000_QL80_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.in%2FKids-Smart-Watch-Girls-Boys%2Fdp%2FB0B63DLMBK&docid=H_fBGuym9xjEUM&tbnid=sTPs7T7z04exqM&vet=12ahUKEwjM9amkhv6QAxWGWXADHVqwBbMQM3oECBcQAA..i&w=903&h=1000&hcb=2&ved=2ahUKEwjM9amkhv6QAxWGWXADHVqwBbMQM3oECBcQAA" alt="Watch">
+        <h3>Smart Watch</h3>
+        <p>Price: ₹3,299</p>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 My E-Commerce Store | All Rights Reserved
+</footer>
+
+</body>
+</html>
